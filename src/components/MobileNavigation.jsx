@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Dialog } from '@headlessui/react'
-
-import { Logomark } from '@/components/Logo'
 import { Navigation } from '@/components/Navigation'
 
 function MenuIcon(props) {
@@ -69,10 +67,10 @@ export function MobileNavigation({ navigation }) {
       <Dialog
         open={isOpen}
         onClose={setIsOpen}
-        className="fixed inset-0 z-50 flex items-start overflow-y-auto bg-slate-900/50 pr-10 backdrop-blur lg:hidden"
+        className="fixed inset-0 z-50 flex items-start overflow-y-auto bg-black/50 pr-10 backdrop-blur lg:hidden"
         aria-label="Navigation"
       >
-        <Dialog.Panel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 dark:bg-slate-900 sm:px-6">
+        <Dialog.Panel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 dark:bg-black sm:px-6">
           <div className="flex items-center">
             <button
               type="button"
@@ -81,8 +79,10 @@ export function MobileNavigation({ navigation }) {
             >
               <CloseIcon className="h-6 w-6 stroke-slate-500" />
             </button>
-            <Link href="/" className="ml-6" aria-label="Home page">
-              <Logomark className="h-9 w-9" />
+            <Link href="/" className="ml-3" aria-label="Home page">
+              <span className="text-xl font-extrabold text-black dark:text-white">
+                Myles<span className="text-gray-400">Developers</span>
+              </span>
             </Link>
           </div>
           <Navigation navigation={navigation} className="mt-5 px-1" />

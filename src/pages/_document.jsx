@@ -47,7 +47,7 @@ export default function Document() {
       <Head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </Head>
-      <body className="flex min-h-full bg-white dark:bg-slate-900 [&>#\_\_next]:flex [&>#\_\_next]:w-full [&>#\_\_next]:flex-col">
+      <body className="flex min-h-full bg-white dark:bg-black [&>#\_\_next]:flex [&>#\_\_next]:w-full [&>#\_\_next]:flex-col">
         <Main />
         <NextScript />
       </body>

@@ -1,10 +1,15 @@
 import Head from 'next/head'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
-
 import { Layout } from '@/components/Layout'
-
+import nProgress from 'nprogress'
 import 'focus-visible'
 import '@/styles/tailwind.css'
+import '@/styles/progress.css'
+import router from 'next/router'
+
+nProgress.configure({
+  showSpinner: true,
+})
 
 function getNodeText(node) {
   let text = ''
@@ -77,3 +82,6 @@ export default function App({ Component, pageProps }) {
     </>
   )
 }
+
+router.events.on('routeChangeStart', () => nProgress.start())
+router.events.on('routeChangeComplete', () => nProgress.done())

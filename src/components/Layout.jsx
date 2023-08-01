@@ -13,39 +13,41 @@ export const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'FAQs', href: '/docs/installation' },
     ],
   },
   {
-    title: 'Core concepts',
+    title: 'API Reference',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
+      { title: 'Supported countries', href: '/docs/understanding-caching' },
       {
-        title: 'Predicting user behavior',
+        title: 'Supported regions',
         href: '/docs/predicting-user-behavior',
       },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
+      { title: 'Supported cities', href: '/docs/basics-of-time-travel' },
       {
-        title: 'Introduction to string theory',
+        title: 'Billing',
         href: '/docs/introduction-to-string-theory',
       },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'Pudo Points', href: '/docs/the-butterfly-effect' },
+      { title: 'Orders', href: '/docs/the-butterfly-effect' },
+      { title: 'Payments', href: '/docs/the-butterfly-effect' },
     ],
   },
-  // {
-  //   title: 'Advanced guides',
-  //   links: [
-  //     { title: 'Writing plugins', href: '/docs/writing-plugins' },
-  //     { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-  //     { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-  //     { title: 'Testing', href: '/docs/testing' },
-  //     { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-  //     {
-  //       title: 'Predictive data generation',
-  //       href: '/docs/predictive-data-generation',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Advanced guides',
+    links: [
+      { title: 'Versioning', href: '/docs/writing-plugins' },
+      { title: 'Webhooks', href: '/docs/neuralink-integration' },
+      { title: 'Rate Limiting', href: '/docs/temporal-paradoxes' },
+      // { title: 'Testing', href: '/docs/testing' },
+      // { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
+      // {
+      //   title: 'Predictive data generation',
+      //   href: '/docs/predictive-data-generation',
+      // },
+    ],
+  },
   // {
   //   title: 'API reference',
   //   links: [

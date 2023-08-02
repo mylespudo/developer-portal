@@ -13,13 +13,13 @@ export const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Getting started', href: '/' },
-      { title: 'FAQs', href: '/docs/installation' },
+      { title: 'FAQs', href: '/docs/faqs' },
     ],
   },
   {
     title: 'API Reference',
     links: [
-      { title: 'Supported countries', href: '/docs/understanding-caching' },
+      { title: 'Supported countries', href: '/docs/supported-countries' },
       {
         title: 'Supported regions',
         href: '/docs/predicting-user-behavior',

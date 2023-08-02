@@ -19,7 +19,7 @@ export const navigation = [
   {
     title: 'API Reference',
     links: [
-      { title: 'Supported countries', href: '/docs/understanding-caching' },
+      { title: 'Supported countries', href: '/docs/supported-countries' },
       {
         title: 'Supported regions',
         href: '/docs/predicting-user-behavior',

@@ -13,7 +13,7 @@ export const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Getting started', href: '/' },
-      { title: 'FAQs', href: '/docs/installation' },
+      { title: 'FAQs', href: '/docs/faqs' },
     ],
   },
   {

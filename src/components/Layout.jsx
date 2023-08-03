@@ -22,14 +22,14 @@ export const navigation = [
       { title: 'Supported countries', href: '/docs/supported-countries' },
       {
         title: 'Supported regions',
-        href: '/docs/predicting-user-behavior',
+        href: '/docs/supported-regions',
       },
-      { title: 'Supported cities', href: '/docs/basics-of-time-travel' },
+      { title: 'Supported cities', href: '/docs/supported-cities' },
       {
         title: 'Billing',
-        href: '/docs/introduction-to-string-theory',
+        href: '/docs/billing',
       },
-      { title: 'Pudo Points', href: '/docs/the-butterfly-effect' },
+      { title: 'Pudo Points', href: '/docs/community-pudos' },
       { title: 'Orders', href: '/docs/the-butterfly-effect' },
       { title: 'Payments', href: '/docs/the-butterfly-effect' },
     ],

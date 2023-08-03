@@ -1,33 +1,34 @@
 ---
-title: Supported countries
-description: Fetch list of supported countries.
+title: Supported regions
+description: Fetch list of supported regions.
 ---
 
-Fetch Supported Countries.
+Fetch Supported Regions.
 
 ---
 
 ## API endpoint
 
 ```shell
-/v1/countries
+/v1/regions
 ```
 
 ### Parameters
 
 ```shell
-params { apiKey: string }
+params { apiKey: string, country?: string }
 ```
 
 ### Data Structure
 
 ```shell
-Country {
+Region {
   id: string
   code: string
   name: string
+  country: Country
   description: string | null
-  status: ACTIVE | DEACTIVATED
+  status: ACTIVE | DEACTIVATE"
   createdAt: Date
   updatedAt: Date
 }
@@ -42,7 +43,7 @@ Below are the error and success responses you can expect when accessing this end
 ### 200: Success
 
 ```shell
-{ status: boolean; data: Array<Country> }
+{ status: boolean; data: Array<Region> }
 ```
 
 ### 400: Bad Request

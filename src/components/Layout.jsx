@@ -30,7 +30,7 @@ export const navigation = [
         href: '/docs/billing',
       },
       { title: 'Pudo Points', href: '/docs/community-pudos' },
-      { title: 'Orders', href: '/docs/the-butterfly-effect' },
+      { title: 'Orders', href: '/docs/orders' },
       { title: 'Payments', href: '/docs/the-butterfly-effect' },
     ],
   },

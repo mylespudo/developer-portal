@@ -31,7 +31,7 @@ export const navigation = [
       },
       { title: 'Pudo Points', href: '/docs/community-pudos' },
       { title: 'Orders', href: '/docs/orders' },
-      { title: 'Payments', href: '/docs/the-butterfly-effect' },
+      { title: 'Payments', href: '/docs/order-payment' },
     ],
   },
   {

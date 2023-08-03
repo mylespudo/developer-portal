@@ -27,7 +27,7 @@ export const navigation = [
       { title: 'Supported cities', href: '/docs/supported-cities' },
       {
         title: 'Billing',
-        href: '/docs/introduction-to-string-theory',
+        href: '/docs/billing',
       },
       { title: 'Pudo Points', href: '/docs/the-butterfly-effect' },
       { title: 'Orders', href: '/docs/the-butterfly-effect' },

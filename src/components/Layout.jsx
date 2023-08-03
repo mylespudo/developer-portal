@@ -30,8 +30,8 @@ export const navigation = [
         href: '/docs/billing',
       },
       { title: 'Pudo Points', href: '/docs/community-pudos' },
-      { title: 'Orders', href: '/docs/the-butterfly-effect' },
-      { title: 'Payments', href: '/docs/the-butterfly-effect' },
+      { title: 'Orders', href: '/docs/orders' },
+      { title: 'Payments', href: '/docs/order-payment' },
     ],
   },
   {
@@ -40,23 +40,8 @@ export const navigation = [
       { title: 'Versioning', href: '/docs/writing-plugins' },
       { title: 'Webhooks', href: '/docs/neuralink-integration' },
       { title: 'Rate Limiting', href: '/docs/temporal-paradoxes' },
-      // { title: 'Testing', href: '/docs/testing' },
-      // { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      // {
-      //   title: 'Predictive data generation',
-      //   href: '/docs/predictive-data-generation',
-      // },
     ],
   },
-  // {
-  //   title: 'API reference',
-  //   links: [
-  //     { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-  //     { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-  //     { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-  //     { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
-  //   ],
-  // },
   {
     title: 'Contributing',
     links: [
@@ -113,7 +98,11 @@ function Header({ navigation }) {
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
-        <Link href="https://github.com" className="group" aria-label="GitHub">
+        <Link
+          href="https://github.com/mylespudo"
+          className="group"
+          aria-label="GitHub"
+        >
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
       </div>

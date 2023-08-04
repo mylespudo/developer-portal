@@ -37,8 +37,7 @@ export const navigation = [
   {
     title: 'Advanced guides',
     links: [
-      { title: 'Versioning', href: '/docs/writing-plugins' },
-      { title: 'Webhooks', href: '/docs/neuralink-integration' },
+      { title: 'Versioning', href: '/docs/versioning' },
       { title: 'Rate Limiting', href: '/docs/temporal-paradoxes' },
     ],
   },

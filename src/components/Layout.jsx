@@ -38,15 +38,7 @@ export const navigation = [
     title: 'Advanced guides',
     links: [
       { title: 'Versioning', href: '/docs/versioning' },
-      { title: 'Rate Limiting', href: '/docs/temporal-paradoxes' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Rate Limiting', href: '/docs/rate-limiting' },
     ],
   },
 ]

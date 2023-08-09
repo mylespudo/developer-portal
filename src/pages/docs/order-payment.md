@@ -10,13 +10,19 @@ Ping us when the order is paid for!
 ## API endpoint
 
 ```shell
-/v1/countries
+/v1/orders/:orderId/pay
 ```
 
 ### Parameters
 
 ```shell
-params { apiKey: string, reference: string }
+params { apiKey: string }
+```
+
+### Request Body
+
+```shell
+body { reference: string }
 ```
 
 ## Responses

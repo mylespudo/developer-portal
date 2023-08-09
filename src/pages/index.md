@@ -54,21 +54,9 @@ Keep an eye on our website and social media channels for updates, announcements,
 
 At Myles, we value your feedback and are dedicated to supporting you throughout your integration journey. Let us know how we can assist you, and we'll be glad to help!
 
-## Submit an Issue
+### Submit an Issue
 
 If you encounter any technical issues, unexpected behavior, or have identified a bug while using the Myles API, we encourage you to submit an issue to our development team. Reporting issues helps us improve the API's performance and deliver a better experience for all our users. Here's how you can submit an issue:
-
-### Community Forum
-
-Before submitting a new issue, please check our issue tracker on GitHub to see if the problem has already been reported by others. This will help avoid duplication and keep our issue board organized.
-
-### Create a New Issue
-
-If the issue is not yet reported, you can create a new one on our GitHub repository. Be sure to provide a clear and concise description of the problem you encountered, including steps to reproduce it, any error messages received, and the relevant API endpoints and parameters involved.
-
-### Attach Screenshots
-
-If applicable, include screenshots or code samples that demonstrate the issue. This will assist our development team in quickly identifying and resolving the problem.
 
 ### Stay Engaged
 

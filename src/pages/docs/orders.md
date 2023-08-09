@@ -15,11 +15,16 @@ Create an order with us using this endpoint.
 /v1/orders
 ```
 
+### Parameters
+
+```shell
+params { apiKey: string }
+```
+
 ### Request Body
 
 ```shell
-{
-  apiKey: string
+body {
   type: PICKUP | DIRECT
   business?: string
   customerName: string

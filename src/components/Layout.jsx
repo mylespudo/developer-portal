@@ -90,6 +90,7 @@ function Header({ navigation }) {
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
         <Link
+          target='_blank'
           href="https://github.com/mylespudo"
           className="group"
           aria-label="GitHub"

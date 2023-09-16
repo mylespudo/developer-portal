@@ -1,12 +1,11 @@
+import { Seo } from '@/components/Seo'
 import Head from 'next/head'
 import Link from 'next/link'
 
 export default function NotFound() {
   return (
     <>
-      <Head>
-        <title>Page not found - Myles Developers</title>
-      </Head>
+      <Seo title='Page not found' relativeUrl='/404' />
       <div className="flex h-full flex-col items-center justify-center text-center">
         <p className="font-display text-sm font-medium text-black dark:text-white">
           404

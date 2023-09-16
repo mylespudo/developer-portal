@@ -1,6 +1,7 @@
 ---
 title: Supported cities
 description: Fetch list of supported cities.
+url: /docs/supported-cities
 ---
 
 Fetch Supported Cities.

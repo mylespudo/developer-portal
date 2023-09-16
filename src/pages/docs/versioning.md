@@ -1,6 +1,7 @@
 ---
 title: Versioning
 description: API versioning
+url: /docs/versioning
 ---
 
 To ensure a smooth and stable integration process, the Myles API supports versioning. API versioning allows us to make updates and improvements to the API while maintaining backward compatibility for existing integrations. Here's how our versioning strategy works:

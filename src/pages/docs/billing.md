@@ -1,6 +1,7 @@
 ---
 title: Billing packages
 description: Fetch list of billing packages.
+url: /docs/billing
 ---
 
 Fetch Billing Packages.

@@ -1,6 +1,7 @@
 ---
 title: FAQs
 description: Here are some frequently asked questions about our API.
+url: /docs/faqs
 ---
 
 Please note that if you have any further questions or need more clarifications, don't hesitate to reach out to our support team for assistance.

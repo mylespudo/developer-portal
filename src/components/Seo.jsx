@@ -44,7 +44,7 @@ export function Seo({
       <meta content={imageUrl} property="og:image" />
       <meta content="200" property="og:image:height" />
       <meta content="200" property="og:image:width" />
-      <meta content="@MylesPudo" name="twitter:site" />
+      <meta content="@myles_pudo" name="twitter:creator" />
       <meta content="summary" name="twitter:card" />
       <meta content="@YouVersion" name="twitter:creator" />
       <meta content={title} name="twitter:title" />

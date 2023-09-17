@@ -1,6 +1,7 @@
 ---
 title: Supported regions
 description: Fetch list of supported regions.
+url: /docs/supported-regions
 ---
 
 Fetch Supported Regions.

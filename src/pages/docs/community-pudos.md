@@ -1,6 +1,7 @@
 ---
 title: Community pudo
 description: Fetch list of community pudo points.
+url: /docs/community-pudos
 ---
 
 Fetch Community Pudos.

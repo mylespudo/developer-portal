@@ -1,6 +1,7 @@
 ---
 title: Rate Limiting
 description: API Rate Limiting
+url: /docs/rate-limiting
 ---
 
 To maintain a fair and consistent usage of the Myles API across all users and applications, we implement rate limiting. Rate limiting sets restrictions on the number of API requests you can make within a specified time window.

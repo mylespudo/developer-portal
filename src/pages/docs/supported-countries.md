@@ -1,6 +1,7 @@
 ---
 title: Supported countries
 description: Fetch list of supported countries.
+url: /docs/supported-countries
 ---
 
 Fetch Supported Countries.

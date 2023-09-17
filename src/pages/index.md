@@ -2,6 +2,7 @@
 title: Getting started
 pageTitle: Myles Developers
 description: Welcome to the Myles Pudo Business API documentation portal!.
+url: /
 ---
 
 Here, you'll find all the information you need to integrate with our API and leverage its features to manage your orders and deliveries. {% .lead %}

@@ -1,6 +1,7 @@
 ---
 title: Create order
 description: Order creation for your shop.
+url: /docs/orders
 ---
 
 Create Order.

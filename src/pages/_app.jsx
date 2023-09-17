@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 import { Layout } from '@/components/Layout'
 import nProgress from 'nprogress'
@@ -6,6 +5,7 @@ import 'focus-visible'
 import '@/styles/tailwind.css'
 import '@/styles/progress.css'
 import router from 'next/router'
+import { Seo } from '@/components/Seo'
 
 nProgress.configure({
   showSpinner: true,
@@ -55,10 +55,7 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
 
 export default function App({ Component, pageProps }) {
   let title = pageProps.markdoc?.frontmatter.title
-
-  let pageTitle =
-    pageProps.markdoc?.frontmatter.pageTitle ||
-    `${pageProps.markdoc?.frontmatter.title} - Docs`
+  let relativeUrl = pageProps.markdoc?.frontmatter?.url ?? '/'
 
   let description = pageProps.markdoc?.frontmatter.description
 
@@ -68,10 +65,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        <title>{pageTitle}</title>
-        {description && <meta name="description" content={description} />}
-      </Head>
+      <Seo title={title} description={description} relativeUrl={relativeUrl} />
       <Layout
         title={title}
         tableOfContents={tableOfContents}

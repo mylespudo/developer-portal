@@ -11,26 +11,28 @@ Fetch Supported Countries.
 ## API endpoint
 
 ```shell
-/v1/countries
+GET /v1/countries
 ```
 
-### Parameters
+### Headers
 
 ```shell
-params { apiKey: string }
+{ X-Myles-Api-Key: string }
 ```
 
 ### Data Structure
 
 ```shell
 Country {
-  id: string
-  code: string
-  name: string
-  description: string | null
-  status: ACTIVE | DEACTIVATED
-  createdAt: Date
-  updatedAt: Date
+	id: string;
+	code: string;
+	name: string;
+	description: string | null;
+	status: ACTIVE | DEACTIVATED;
+	activatedAt: Date | null;
+	deactivatedAt: Date | null;
+	createdAt: Date;
+	updatedAt: Date;
 }
 ```
 
@@ -46,8 +48,15 @@ Below are the error and success responses you can expect when accessing this end
 { status: boolean; data: Array<Country> }
 ```
 
+### 401: Unauthorized
+
+```shell
+{ message: string; code: number }
+```
+
+
 ### 400: Bad Request
 
 ```shell
-{ status: boolean; errorMessage: string }
+{ message: string; code: number }
 ```

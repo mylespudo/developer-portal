@@ -29,7 +29,7 @@ export const navigation = [
         title: 'Billing',
         href: '/docs/billing',
       },
-      { title: 'Pudo Points', href: '/docs/community-pudos' },
+      { title: 'Pudo Points', href: '/docs/businesses' },
       { title: 'Orders', href: '/docs/orders' },
       { title: 'Payments', href: '/docs/order-payment' },
     ],

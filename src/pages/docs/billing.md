@@ -6,37 +6,39 @@ url: /docs/billing
 
 Fetch Billing Packages.
 
-These packages have implications on how your order is handled. Use this endpoint to fetch the available billing packages.
+These packages have implications on how your order is handled and how it's priced. Use this endpoint to fetch the available billing packages.
 
 ---
 
 ## API endpoint
 
 ```shell
-/v1/billing-packages
+GET /v1/billing-packages
 ```
 
-### Parameters
+### Headers
 
 ```shell
-params { apiKey: string }
+{ X-Myles-Api-Key: string }
 ```
 
 ### Data Structure
 
 ```shell
 BillingPackage {
-  basePrice: number
-  code: string
-  costPerDimensions: number
-  costPerKilometer: number
-  costPerWeight: number
-  createdAt: Date
-  description: string | null
-  id: string
-  name: string
-  status: string
-  updatedAt: Date
+    activatedAt: Date | null;
+	basePrice: number;
+	code: string;
+	costPerDimensions: number;
+	costPerKilometer: number;
+	costPerWeight: number;
+	createdAt: Date;
+	deactivatedAt: null;
+	description: string | null;
+	id: string;
+	name: string;
+	status: string;
+	updatedAt: Date;
 }
 ```
 
@@ -52,8 +54,16 @@ Below are the error and success responses you can expect when accessing this end
 { status: boolean; data: Array<BillingPackage> }
 ```
 
+
+### 401: Unauthorized
+
+```shell
+{ message: string; code: number }
+```
+
+
 ### 400: Bad Request
 
 ```shell
-{ status: boolean; errorMessage: string }
+{ message: string; code: number }
 ```

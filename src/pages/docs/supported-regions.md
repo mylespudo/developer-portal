@@ -11,27 +11,35 @@ Fetch Supported Regions.
 ## API endpoint
 
 ```shell
-/v1/regions
+GET /v1/regions
 ```
 
-### Parameters
+### Headers
 
 ```shell
-params { apiKey: string, country?: string }
+{ X-Myles-Api-Key: string }
+```
+
+### Params
+
+```shell
+{ country?: string }
 ```
 
 ### Data Structure
 
 ```shell
 Region {
-  id: string
-  code: string
-  name: string
-  country: Country
-  description: string | null
-  status: ACTIVE | DEACTIVATE"
-  createdAt: Date
-  updatedAt: Date
+	id: string;
+	code: string;
+	name: string;
+	country: Country;
+	description: string | null;
+	status: ACTIVE | DEACTIVATED;
+	activatedAt: Date | null;
+	deactivatedAt: Date | null;
+	createdAt: Date;
+	updatedAt: Date;
 }
 ```
 
@@ -47,8 +55,15 @@ Below are the error and success responses you can expect when accessing this end
 { status: boolean; data: Array<Region> }
 ```
 
+### 401: Unauthorized
+
+```shell
+{ message: string; code: number }
+```
+
+
 ### 400: Bad Request
 
 ```shell
-{ status: boolean; errorMessage: string }
+{ message: string; code: number }
 ```

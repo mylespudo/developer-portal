@@ -1,5 +1,5 @@
 ---
-title: Create order
+title: Create Order
 description: Order creation for your shop.
 url: /docs/orders
 ---
@@ -13,48 +13,58 @@ Create an order with us using this endpoint.
 ## API endpoint
 
 ```shell
-/v1/orders
+POST /v1/orders
 ```
 
-### Parameters
+### Headers
 
 ```shell
-params { apiKey: string }
+{ X-Myles-Api-Key: string }
 ```
 
 ### Request Body
 
 ```shell
-body {
-  type: PICKUP | DIRECT
-  business?: string
-  customerName: string
-  customerEmail: string
-  customerPhone?: string
-  customerRegion?: string
-  customerCity?: string
-  customerAddress?: string
-  customerLatitude?: number
-  customerLongitude?: number
-  weight: number
-  volume: number
-  notesOnDelivery?: string
-  billingPackage: string
+{
+  type: PICKUP | DIRECT;
+  business?: UUID;
+  customerName: string;
+  customerEmail: string;
+  customerPhone: string;
+  customerRegion?: string;
+  customerCity?: string;
+  customerAddress?: string;
+  customerLatitude?: number;
+  customerLongitude?: number;
+  notesOnDelivery?: string;
+  billingPackage: UUID;
+  products: Array<{
+    name: string;
+    description?: string;
+    amount: number;
+    weight?: number;
+    volume?: number;
+    image?: string;
+    # This helps users tracking orders on our system view your products 
+    # directly on your website.
+    productLink?: string;
+    quantity: number;
+  }>
 }
 ```
 
 {% callout title="Note:" %}
-When the type is "PICKUP," provide the business parameter.
-When the type is "DIRECT," provide the customerRegion, customerCity, customerLatitude, and customerLongitude parameters.
-weight: Total weight of the package.
-volume: Total volume of the package.
+- When the type is "PICKUP," provide the business parameter.
+- When the type is "DIRECT," provide the customerRegion, customerCity, customerLatitude, and customerLongitude parameters.
+- If you already have a delivery business on myles and you want to handle your own deliveries, you can use your business id.
+- On myles, we deal with pesewas so convert your product prices into pesewas. (You can do that by multiplying by 100).
 {% /callout %}
 
 ### Data Structure
 
 ```shell
 Order {
-  amount: number
+  deliveryFee: number # Pesewa equivalent
   code: string
   createdAt: Date
   customerAddress: string | null
@@ -76,11 +86,18 @@ Below are the error and success responses you can expect when accessing this end
 ### 200: Success
 
 ```shell
-{ status: boolean; data: Order}
+{ success: boolean; data: Order}
 ```
+
+### 401: Unauthorized
+
+```shell
+{ message: string; code: number }
+```
+
 
 ### 400: Bad Request
 
 ```shell
-{ status: boolean; errorMessage: string }
+{ message: string; code: number }
 ```

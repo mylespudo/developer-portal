@@ -11,19 +11,23 @@ Ping us when the order is paid for!
 ## API endpoint
 
 ```shell
-/v1/orders/:orderId/pay
+PATCH /v1/orders/:orderId/pay
 ```
 
-### Parameters
+### Headers
 
 ```shell
-params { apiKey: string }
+{ X-Myles-Api-Key: string }
 ```
+
 
 ### Request Body
 
 ```shell
-body { reference: string }
+{ 
+    # Payment reference number. This will help us track payments later on.
+    reference: string
+}
 ```
 
 ## Responses
@@ -33,11 +37,18 @@ Below are the error and success responses you can expect when accessing this end
 ### 200: Success
 
 ```shell
-{ status: boolean; data: true }
+{ success: boolean; data: boolean }
 ```
+
+### 401: Unauthorized
+
+```shell
+{ message: string; code: number }
+```
+
 
 ### 400: Bad Request
 
 ```shell
-{ status: boolean; errorMessage: string }
+{ message: string; code: number }
 ```

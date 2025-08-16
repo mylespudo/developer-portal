@@ -14,6 +14,8 @@ export const navigation = [
     links: [
       { title: 'Getting started', href: '/' },
       { title: 'FAQs', href: '/docs/faqs' },
+      { title: 'Contact Us', href: '/docs/contact' },
+
     ],
   },
   {

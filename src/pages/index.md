@@ -41,10 +41,6 @@ Before reaching out, we recommend exploring our comprehensive documentation port
 
 Our API reference provides in-depth explanations and examples for each API endpoint. It's a valuable resource to understand the various functionalities and how to use them effectively.
 
-### Support Team
-
-If you can't find the answer you're looking for in the documentation, don't hesitate to contact our dedicated support team. You can reach out to them via email at team@mylespudo.com or through the contact form on our website. Our team is ready to assist you with any technical queries, integration challenges, or general inquiries.
-
 ### Community Forum
 
 Connect with fellow developers and explore discussions on common issues, best practices, and tips for using the Myles API. The community forum is a great place to share experiences and learn from others in the developer community.

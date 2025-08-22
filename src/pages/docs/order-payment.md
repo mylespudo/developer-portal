@@ -4,7 +4,7 @@ description: Handle your order payments.
 url: /docs/order-payment
 ---
 
-Ping us when the order is paid for!
+Ping us when the order is paid for.
 
 ---
 

@@ -4,7 +4,6 @@ description: Order creation for your shop.
 url: /docs/orders
 ---
 
-Create Order.
 
 Create an order with us using this endpoint.
 

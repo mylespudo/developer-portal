@@ -10,4 +10,4 @@ To maintain a fair and consistent usage of the Myles API across all users and ap
 
 ## Rate Limit Thresholds
 
-Each API key is assigned a specific rate limit, which defines the maximum number of requests allowed per minute or per hour. The rate limits are subject to change based on your subscription plan and usage history
+Each API key is assigned a specific rate limit, which defines the maximum number of requests allowed per minute or per hour. The rate limits are subject to change based on your subscription plan and usage history.

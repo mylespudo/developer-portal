@@ -63,6 +63,18 @@ Below are the error and success responses you can expect when accessing this end
 { status: boolean; data: Array<Pudo> }
 ```
 
+### 201: Created
+
+```shell
+{ message: string; code: number }
+```
+
+### 204: No Content
+
+```shell
+{ message: string; code: number }
+```
+
 ### 401: Unauthorized
 
 ```shell
@@ -70,7 +82,19 @@ Below are the error and success responses you can expect when accessing this end
 ```
 
 
+### 422: Unprocessable Content - Your Input is Wrong/Inaccurate
+
+```shell
+{ message: string; code: number }
+```
+
 ### 400: Bad Request
+
+```shell
+{ message: string; code: number }
+```
+
+### 429: Too Many Requests
 
 ```shell
 { message: string; code: number }

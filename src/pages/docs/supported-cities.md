@@ -55,7 +55,25 @@ Below are the error and success responses you can expect when accessing this end
 { status: boolean; data: Array<City> }
 ```
 
+### 201: Created
+
+```shell
+{ message: string; code: number }
+```
+
+### 204: No Content
+
+```shell
+{ message: string; code: number }
+```
+
 ### 401: Unauthorized
+
+```shell
+{ message: string; code: number }
+```
+
+### 422: Unprocessable Content - Your Input is Wrong/Inaccurate
 
 ```shell
 { message: string; code: number }
@@ -63,6 +81,12 @@ Below are the error and success responses you can expect when accessing this end
 
 
 ### 400: Bad Request
+
+```shell
+{ message: string; code: number }
+```
+
+### 429: Too Many Requests
 
 ```shell
 { message: string; code: number }

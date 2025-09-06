@@ -53,17 +53,6 @@ Below are the error and success responses you can expect when accessing this end
 ```shell
 { status: boolean; data: Array<BillingPackage> }
 ```
-### 201: Created
-
-```shell
-{ message: string; code: number }
-```
-
-### 204: No Content
-
-```shell
-{ message: string; code: number }
-```
 
 ### 401: Unauthorized
 

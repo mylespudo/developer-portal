@@ -48,18 +48,6 @@ Below are the error and success responses you can expect when accessing this end
 { status: boolean; data: Array<Country> }
 ```
 
-### 201: Created
-
-```shell
-{ message: string; code: number }
-```
-
-### 204: No Content
-
-```shell
-{ message: string; code: number }
-```
-
 ### 401: Unauthorized
 
 ```shell

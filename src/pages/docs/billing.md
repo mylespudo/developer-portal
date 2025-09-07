@@ -54,15 +54,25 @@ Below are the error and success responses you can expect when accessing this end
 { status: boolean; data: Array<BillingPackage> }
 ```
 
-
 ### 401: Unauthorized
 
 ```shell
 { message: string; code: number }
 ```
 
+### 422: Unprocessable Content - Your Input is Wrong/Inaccurate
+
+```shell
+{ message: string; code: number }
+```
 
 ### 400: Bad Request
+
+```shell
+{ message: string; code: number }
+```
+
+### 429: Too Many Requests
 
 ```shell
 { message: string; code: number }
